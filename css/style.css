@@ -1,39 +1,98 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@700&family=Roboto:wght@300&display=swap');
 
 :root {
-    --font: hsl(0, 0%, 100%);
-    --accent: hsl(277, 70%, 62%);
-    --bg: hsl(233, 46%, 7%);
-    --bg-card: hsl(246, 38%, 16%);
-  }
+  --font: hsl(0, 0%, 100%);
+  --font-text: hsl(0, 0%, 75%);
+  --accent: hsl(277, 70%, 62%);
+  --bg: hsl(233, 46%, 7%);
+  --bg-card: hsl(246, 38%, 16%);
+}
   
-  * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    font-size: 100%;
-  }
-  
-  *::before,
-  *::after {
-    box-sizing: border-box;
-  }
-  
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    line-height: 1.5;
-    background-color: var(--bg);
-    color: var(--font);
-  }
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 100%;
+}
 
-  h1, h2 {
-    font-family: 'Merriweather Sans', sans-serif;
-  }
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  line-height: 1.5;
+  background-color: var(--bg);
+  color: var(--font);
+}
+
+h1, h2 {
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+main {
+  background-color: var(--bg-card);
+  margin: 1rem;
+  border-radius: .5rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+}
+
+@media (min-width: 992px) {
   main {
-    background-color: var(--bg-card);
-    margin: 1rem;
+    flex-direction: row-reverse ;
   }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+picture {
+  mix-blend-mode: multiply;
+}
+
+.preview-card__image {
+  background-color: var(--accent);
+  filter: brightness(1.3) contrast(.75);
+
+}
+
+.preview-card__content {
+  padding: 2.5rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.title-highlight {
+  color: var(--accent);
+}
+
+p {
+  margin-bottom: 2rem;
+}
+
+.text-color {
+  color: var(--font-text);
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+.preview-card__stats-item {
+  margin-bottom: 1.5rem;
+}

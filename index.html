@@ -10,25 +10,31 @@
 <body>
   <main class="preview-card">
     <div class="preview-card__image">
-      <picture>???</picture>
+      <picture>
+        <source media="(min-width: 992px)"
+                srcset="./images/image-header-desktop.jpg 540w">
+        <source srcset="./images/image-header-mobile.jpg 654w">
+        <img src="./images/image-header-mobile.jpg" alt="3 women working at the coffee like office, with one of them looking to the right with a laugh.">
+      </picture>
     </div>
-    <div class="preview-card__content">
-      <h1>Get insights that help your business grow.</h1>
 
-      <p>Discover the benefits f data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
+    <div class="preview-card__content">
+      <h1>Get <span class="title-highlight">insights</span> that help your business grow.</h1>
+
+      <p class="text-color ">Discover the benefits f data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
 
       <div class="preview-card__stats">
         <div class="preview-card__stats-item">
           <h2>10k+</h2>
-          <span>companies</span>
+          <span class="text-color">companies</span>
         </div>
         <div class="preview-card__stats-item">
           <h2>314</h2>
-          <span>templates</span>
+          <span class="text-color">templates</span>
         </div>
         <div class="preview-card__stats-item">
           <h2>12M+</h2>
-          <span>queries</span>
+          <span class="text-color">queries</span>
         </div>
       </div>
     </div>
