@@ -5,39 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Frontend Mentor | Stats preview card component</title>
 
+  <link rel="stylesheet" href="./dist/output.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
-  <main class="preview-card">
-    <div class="preview-card__image">
-      <picture>
-        <source media="(min-width: 992px)"
-                srcset="./images/image-header-desktop.jpg 540w">
-        <source srcset="./images/image-header-mobile.jpg 654w">
-        <img src="./images/image-header-mobile.jpg" alt="3 women working at the coffee like office, with one of them looking to the right with a laugh.">
-      </picture>
-    </div>
+<body class="min-h-screen flex justify-center items-center bg-[#0a0c1b]">
 
-    <div class="preview-card__content">
-      <h1>Get <span class="title-highlight">insights</span> that help your business grow.</h1>
+  <main class="flex flex-col sm:flex-row bg-[#1b1838] text-white rounded-lg overflow-hidden mx-4">
+    <div class="flex flex-col p-7 text-center gap-6 sm:w-1/2">
+      <div class="flex flex-col">
+        <h1 class="text-2xl font-bold mb-4">Get <span class="text-[#a959db]">insights</span> that help your business grow.</h1>
+        <p class="text-sm text-gray-400">Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
+      </div>
 
-      <p class="text-color ">Discover the benefits f data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
-
-      <div class="preview-card__stats">
-        <div class="preview-card__stats-item">
-          <h2>10k+</h2>
-          <span class="text-color">companies</span>
+      <div class="w-full flex flex-col min-[400px]:flex-row gap-4">
+        <div>
+          <h2 class="text-xl font-bold">10k+</h2>
+          <p class="text-xs text-gray-400 uppercase">companies</p>
         </div>
-        <div class="preview-card__stats-item">
-          <h2>314</h2>
-          <span class="text-color">templates</span>
+
+        <div>
+          <h2 class="text-xl font-bold">314</h2>
+          <p class="text-xs text-gray-400 uppercase">templates</p>
         </div>
-        <div class="preview-card__stats-item">
-          <h2>12M+</h2>
-          <span class="text-color">queries</span>
+
+        <div>
+          <h2 class="text-xl font-bold">12M+</h2>
+          <p class="text-xs text-gray-400 uppercase">queries</p>
         </div>
       </div>
     </div>
+
+    <picture class="block -order-1 sm:order-2 sm:w-1/2">
+      <source media="(min-width: 640px)" srcset="/images/image-header-desktop.jpg">
+      <source srcset="/images/image-header-mobile.jpg">
+
+      <img class="block w-full h-full object-cover" src="./images/image-header-mobile.jpg" alt="Two woman's working on a laptop, one is working on her phone laughing to someone to the right.">
+    </picture>
   </main>
+
+  <script src="./js/script.js"></script>
 </body>
 </html>
