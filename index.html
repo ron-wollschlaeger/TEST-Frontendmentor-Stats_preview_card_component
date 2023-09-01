@@ -9,14 +9,15 @@
 </head>
 <body class="min-h-screen flex justify-center items-center bg-[#0a0c1b]">
 
-  <main class="flex flex-col sm:flex-row mx-4 text-white text-center sm:text-left bg-[#1b1838] rounded-lg overflow-hidden">
-    <div class="flex flex-col p-7 gap-6 sm:w-1/2 sm:justify-center sm:items-center">
-      <div class="flex flex-col">
+  <main class="flex flex-col sm:flex-row mx-4 text-white bg-[#1b1838] rounded-lg overflow-hidden">
+
+    <div class="flex flex-col w-full sm:w-1/2 text-center sm:text-left">
+      <div>
         <h1 class="text-2xl font-bold mb-4">Get <span class="text-[#a959db]">insights</span> that help your business grow.</h1>
         <p class="text-sm text-gray-400">Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
       </div>
 
-      <div class="w-full flex flex-col justify-center min-[400px]:flex-row gap-4">
+      <div class="flex flex-col w-full gap-4 sm:flex-row">
         <div>
           <h2 class="text-xl font-bold">10k+</h2>
           <p class="text-xs text-gray-400 uppercase">companies</p>
@@ -35,8 +36,8 @@
     </div>
 
     <picture class="block -order-1 sm:order-2 sm:w-1/2">
-      <source media="(min-width: 640px)" srcset="/images/image-header-desktop.jpg">
-      <source srcset="/images/image-header-mobile.jpg">
+      <source media="(min-width: 640px)" srcset="./images/image-header-desktop.jpg">
+      <source srcset="./images/image-header-mobile.jpg">
 
       <img class="block w-full h-full object-cover" src="./images/image-header-mobile.jpg" alt="Two woman's working on a laptop, one is working on her phone laughing to someone to the right.">
     </picture>
